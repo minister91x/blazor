@@ -1,0 +1,72 @@
+﻿@page "/editdata/{Id}"
+@using BlazorApp.Models;
+
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+<h2>Edit Person</h2>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="FirstName"> Id *</label>
+            <input form="FirstName" class="form-control" @bind="@person.Id" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="LastName"> Last Name *</label>
+            <input form="LastName" class="form-control" @bind="@person.qrStyle_No" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="Email"> Email *</label>
+            <input form="Email" class="form-control" @bind="@person.qrBuyer" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="MobileNo"> Mobile No *</label>
+            <input form="mobileNo" class="form-control" @bind="@person.qrColor" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input type="button" class="btn btn-primary" @onclick="@Save" value="Save" />
+            <input type="button" class="btn" @onclick="@Cancel" value="Cancel" />
+        </div>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public string Id { get; set; }
+    DataViewModel person = new DataViewModel();
+    string url = "http://localhost:5105/api/Demo/Demo_Detail";
+    string url_save = "http://localhost:5105/api/Demo/Save";
+    protected override async Task OnInitializedAsync()
+    {
+       // person = await Http.GetFromJsonAsync<PersonViewModel>("api/person/" + Id);
+        var postBody = new { Id = Id };
+        using var response = await new HttpClient().PostAsJsonAsync(url, postBody);
+
+        person = await response.Content.ReadFromJsonAsync<DataViewModel>();
+    }
+    protected async Task Save()
+    {
+        var postBody = new { Id = Id };
+        using var response = await new HttpClient().PostAsJsonAsync(url_save, postBody);
+
+        bool personResponse = await response.Content.ReadFromJsonAsync<bool>();
+        if (personResponse)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Updated Successfully!");
+            NavigationManager.NavigateTo("personlist");
+        }
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("personlist");
+    }
+}

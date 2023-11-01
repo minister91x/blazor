@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\bin\Debug\net7.0\ConsoleAppNet7.exe
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\bin\Debug\net7.0\ConsoleAppNet7.deps.json
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\bin\Debug\net7.0\ConsoleAppNet7.runtimeconfig.json
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\bin\Debug\net7.0\ConsoleAppNet7.dll
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\bin\Debug\net7.0\ConsoleAppNet7.pdb
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\ConsoleAppNet7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\ConsoleAppNet7.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\ConsoleAppNet7.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\ConsoleAppNet7.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\ConsoleAppNet7.dll
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\refint\ConsoleAppNet7.dll
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\ConsoleAppNet7.pdb
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\ConsoleAppNet7.genruntimeconfig.cache
+C:\Users\Admin\source\repos\ConsoleApp2\ConsoleAppNet7\obj\Debug\net7.0\ref\ConsoleAppNet7.dll
