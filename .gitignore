@@ -1,0 +1,15 @@
+.vs/
+*.json
+*.editconfig
+*.pdb
+*.dll
+*.bin
+*.vs
+*.vsidx
+
+BlazorApp/bin/Debug/net7.0/wwwroot/_framework/BlazorApp.dll.gz
+BlazorApp/bin/Debug/net7.0/wwwroot/_framework/BlazorApp.pdb.gz
+BlazorApp/obj/Debug/net7.0/BlazorApp.GeneratedMSBuildEditorConfig.editorconfig
+BlazorApp/obj/Debug/net7.0/build-gz/PQK6s7df.gz
+BlazorApp/obj/Debug/net7.0/build-gz/QOWXhoC2.gz
+BlazorServerApp/obj/Debug/net7.0/BlazorServerApp.GeneratedMSBuildEditorConfig.editorconfig

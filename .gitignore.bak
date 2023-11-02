@@ -1,0 +1,9 @@
+.vs/
+*.json
+*.editconfig
+*.pdb
+*.dll
+*.bin
+*.vs
+
+
